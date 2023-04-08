@@ -1,21 +1,17 @@
 const express = require('express');
 const path = require('path');
+const htmlRoute = require('./routes/html')
+const apiRoute = require('./routes/api')
 
 const PORT = process.env.PORT || 3001;
 
 const app = express();
 
-app.use(express.static('public'));
+// app.use(express.static('public'));
+app.use('/public', express.static(path.join(__dirname, "public")));
 
-
-app.get('/', (req, res) =>
-  res.sendFile(path.join(__dirname, 'index.html'))
-);
-
-
-app.get('/notes', (req, res) =>
-  res.sendFile(path.join(__dirname, 'notes.html'))
-);
+app.use(htmlRoute)
+// app.use(apiRoute)
 
 app.listen(PORT, () =>
   console.log(`App listening at http://localhost:${PORT} 🚀`)            

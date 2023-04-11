@@ -10,6 +10,10 @@ https://user-images.githubusercontent.com/122385993/231201379-002f3bc7-d687-47cd
 The demo video can also be viewed at the following link:
 [https://watch.screencastify.com/v/iQvkqoSCJEWjH6zfBG7v](https://watch.screencastify.com/v/iQvkqoSCJEWjH6zfBG7v)
 
+## Deployment
+The application is deployed via Heroku at the following link:
+https://cryptic-crag-98729.herokuapp.com/
+
 ## Installation
 N/A
 
